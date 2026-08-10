@@ -16,7 +16,6 @@
   },
   "plugin": [
     "./plugins/caveman/plugin.js",
-    "superpowers@git+https://github.com/obra/superpowers.git",
   ],
   "mcp": {
     "context7": {
