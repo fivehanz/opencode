@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Reuse opencode skills (same SKILL.md format as Crush).
+option skill-path ~/.config/opencode/skills
+
+# Load opencode global instructions (caveman mode block).
+option global-context-path ~/.config/opencode/AGENTS.md
+
+# Permission parity with opencode.jsonc: read-only tools auto-allowed.
+# (Crush has no command-level rules, so bash stays prompting like opencode "*"=ask.)
+permissions allow view ls grep glob
+
+# Reuse opencode MCP servers.
+mcp add context7 --type http --url "https://mcp.context7.com/mcp"
+mcp add playwright --type stdio --command npx --args -y --args @playwright/mcp@latest
+mcp add svelte --type stdio --command npx --args -y --args @sveltejs/mcp

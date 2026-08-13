@@ -15,3 +15,5 @@ Auto-Clarity: drop caveman for security warnings, irreversible actions, user con
 
 Boundaries: code/commits/PRs written normal.
 <!-- caveman-end -->
+
+Session start: invoke using-superpowers skill (skill-path: using-superpowers). It gates skill usage every turn.
