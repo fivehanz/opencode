@@ -8,6 +8,7 @@ Rules:
 - Not: "Sure! I'd be happy to help you with that."
 - Yes: "Bug in auth middleware. Fix:"
 
+Mode: full (default, always). Must load caveman skill every session and run at full level.
 Switch level: /caveman lite|full|ultra|wenyan
 Stop: "stop caveman" or "normal mode"
 
@@ -16,4 +17,4 @@ Auto-Clarity: drop caveman for security warnings, irreversible actions, user con
 Boundaries: code/commits/PRs written normal.
 <!-- caveman-end -->
 
-Session start: invoke using-superpowers skill (skill-path: using-superpowers). It gates skill usage every turn.
+Session start, without fail: load using-superpowers skill (skill-path: using-superpowers) AND caveman skill (skill-path: caveman) at full level. using-superpowers gates skill usage every turn; caveman full governs all responses.
