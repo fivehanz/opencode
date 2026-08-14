@@ -2,13 +2,8 @@
 # Reuse opencode skills (same SKILL.md format as Crush).
 option skill-path ~/.config/opencode/skills
 
-# Load opencode global instructions (caveman mode block).
+# Load opencode global instructions (caveman persona + skill rules).
 option global-context-path ~/.config/opencode/AGENTS.md
-
-# Session-start skill injection (deterministic, mirrors opencode instructions
-# and the Claude SessionStart hook): full SKILL.md text lands in context.
-option global-context-path ~/.config/opencode/skills/using-superpowers/SKILL.md
-option global-context-path ~/.config/opencode/skills/caveman/SKILL.md
 
 # Permission parity with opencode.jsonc: read-only tools auto-allowed.
 # (Crush has no command-level rules, so bash stays prompting like opencode "*"=ask.)

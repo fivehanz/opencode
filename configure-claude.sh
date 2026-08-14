@@ -37,27 +37,6 @@ link "$REPO_DIR/agents" "$CONFIG_DIR/agents"
 link "$REPO_DIR/commands" "$CONFIG_DIR/commands"
 link "$REPO_DIR/AGENTS.md" "$CONFIG_DIR/CLAUDE.md"
 
-# Session-start hook: injects using-superpowers + caveman SKILL.md text into
-# every session. Merges into existing settings.json, preserving other keys.
-install_session_hook() {
-  local settings="$CONFIG_DIR/settings.json"
-  local hook='{"hooks":{"SessionStart":[{"hooks":[{"type":"command","command":"'"$REPO_DIR"'/hooks/session-start-skills.sh"}]}]}}'
-  if [[ ! -f "$settings" ]]; then
-    echo "$hook" > "$settings"
-    echo "created $settings with SessionStart hook"
-    return
-  fi
-  if jq -e '.hooks.SessionStart' "$settings" >/dev/null 2>&1; then
-    echo "SessionStart hook already present in $settings"
-    return
-  fi
-  cp "$settings" "$settings.bak.$(date +%s)"
-  # Deep-merge at .hooks level so existing hook events survive.
-  jq --argjson h "$hook" '.hooks = ((.hooks // {}) + $h.hooks)' "$settings" > "$settings.tmp" && mv "$settings.tmp" "$settings"
-  echo "added SessionStart hook to $settings (backup in $CONFIG_DIR)"
-}
-install_session_hook
-
 if command -v claude >/dev/null 2>&1; then
   add_mcp_http() {
     local name="$1" url="$2"
