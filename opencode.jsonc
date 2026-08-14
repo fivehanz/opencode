@@ -17,6 +17,10 @@
   "plugin": [
     "./plugins/caveman/plugin.js",
   ],
+  "instructions": [
+    "skills/using-superpowers/SKILL.md",
+    "skills/caveman/SKILL.md",
+  ],
   "mcp": {
     "context7": {
       "type": "remote",

@@ -17,4 +17,4 @@ Auto-Clarity: drop caveman for security warnings, irreversible actions, user con
 Boundaries: code/commits/PRs written normal.
 <!-- caveman-end -->
 
-Session start, without fail: load using-superpowers skill (skill-path: using-superpowers) AND caveman skill (skill-path: caveman) at full level. using-superpowers gates skill usage every turn; caveman full governs all responses.
+Session start: using-superpowers AND caveman skills MUST be active every session. Full SKILL.md text of both is auto-injected into context at session start by all three CLIs (opencode `instructions` in opencode.jsonc, Claude Code SessionStart hook in ~/.claude/settings.json, Crush `global-context-path` in crushrc) — already loaded, do not re-view. using-superpowers gates skill usage every turn; caveman full governs all responses.
