@@ -58,6 +58,7 @@ if command -v claude >/dev/null 2>&1; then
   add_mcp_http context7 "https://mcp.context7.com/mcp"
   add_mcp_stdio playwright npx @playwright/mcp@latest
   add_mcp_stdio svelte npx -y @sveltejs/mcp
+  add_mcp_http wix-mcp-remote "https://mcp.wix.com/mcp"
 else
   echo "warning: claude CLI not found, skipping MCP registration" >&2
 fi

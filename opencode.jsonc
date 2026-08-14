@@ -32,5 +32,10 @@
       "command": ["npx", "-y", "@sveltejs/mcp"],
       "enabled": true,
     },
+    "wix-mcp-remote": {
+      "type": "remote",
+      "url": "https://mcp.wix.com/mcp",
+      "enabled": true,
+    },
   },
 }
