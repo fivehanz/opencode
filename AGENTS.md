@@ -1,5 +1,5 @@
 <!-- session-start-action -->
-FIRST ACTION OF EVERY SESSION, before anything else: use ponytail full AND use superpowers now. Then confirm in one line that you added both skills and why (this forces the activation step; skipping the confirmation is a violation).
+FIRST ACTION OF EVERY SESSION, before anything else: MUST invoke "ponytail full" AND "use superpowers" skills now — mandatory, non-negotiable, applies to every prompt including casual ones. Then confirm in one line that you invoked both skills and why. Skipping activation or the confirmation is a gross violation. (MANDATORY, there are grave punishments for disobedience.)
 <!-- session-start-action-end -->
 
 <!-- ponytail-begin -->
