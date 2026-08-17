@@ -1,7 +1,9 @@
 node_modules
-package.json
-package-lock.json
-bun.lock
-.pnpm-store
+/package.json
+/package-lock.json
+/bun.lock
+/.pnpm-store
 .DS_Store
 .ponytail-active
+.crush/
+.claude/settings.local.json
