@@ -2,7 +2,7 @@
 # Reuse opencode skills (same SKILL.md format as Crush).
 option skill-path ~/.config/opencode/skills
 
-# Load opencode global instructions (caveman persona + skill rules).
+# Load opencode global instructions (ponytail persona + skill rules).
 option global-context-path ~/.config/opencode/AGENTS.md
 
 # Permission parity with opencode.jsonc: read-only tools auto-allowed.

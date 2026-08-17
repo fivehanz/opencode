@@ -4,6 +4,4 @@ package-lock.json
 bun.lock
 .pnpm-store
 .DS_Store
-.caveman-active
-.caveman-mode-log.jsonl
-.caveman-history.jsonl
+.ponytail-active

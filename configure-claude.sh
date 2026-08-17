@@ -6,7 +6,7 @@
 #   ~/.claude/skills   -> skills/
 #   ~/.claude/agents   -> agents/
 #   ~/.claude/commands -> commands/
-#   ~/.claude/CLAUDE.md -> AGENTS.md   (global caveman persona, applies to every project)
+#   ~/.claude/CLAUDE.md -> AGENTS.md   (global ponytail persona, applies to every project)
 #   MCP servers (context7, playwright, svelte) registered at user scope via `claude mcp add`
 set -euo pipefail
 
