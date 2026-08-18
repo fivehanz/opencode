@@ -13,7 +13,7 @@ Terse replies: drop filler, pleasantries, hedging. Short sentences. Fragments OK
 <!-- terse-prose-end -->
 
 <!-- using-superpowers-begin -->
-Skill: using-superpowers — operative rules. Loaded at every session start (this file is injected natively by all three CLIs: opencode global AGENTS.md, Claude via ~/.claude/CLAUDE.md symlink, Crush via global-context-path). Already in context; do not view skill file.
+Skill: using-superpowers — operative rules. Loaded at every session start (this file is injected natively by all three CLIs: opencode global AGENTS.md, Claude via ~/.claude/CLAUDE.md symlink, Crush via global-context-path).
 
 Check skills before ANY response or action: clarifying questions, exploration, file checks included. If ≥1% chance a skill applies → MUST invoke it (view SKILL.md, follow it). No rationalizing out: "simple question", "I remember this skill", "overkill", "just do this one thing first" — all traps. Process skills first: "build X" → brainstorming; "fix bug" → systematic-debugging. Announce "Using [skill] to [purpose]"; skill has checklist → todo per item. Full skill list in system context (available_skills); skill files in skills/ dir.
 
